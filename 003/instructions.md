@@ -1,4 +1,4 @@
-# Given an integer array nums, a reducer function fn, and an initial value init, return the final result obtained by executing the fn function on each element of the array, sequentially, passing in the return value from the calculation on the preceding element.
+# Given an integer array nums, a reducer function fn, and an initial value init, return the final result obtained by executing the fn function on each element of the array, sequentially, passing in the return value from the calculation on the preceding element
 
 This result is achieved through the following operations: val = fn(init, nums[0]), val = fn(val, nums[1]), val = fn(val, nums[2]), ... until every element in the array has been processed. The ultimate value of val is then returned.
 
@@ -24,14 +24,14 @@ Example 2:
 
 Input:
 nums = [1,2,3,4]
-fn = function sum(accum, curr) { return accum + curr _ curr; }
+fn = function sum(accum, curr) { return accum + curr _curr; }
 init = 100
 Output: 130
 Explanation:
 initially, the value is init=100.
-(100) + nums[0] _ nums[0] = 101
-(101) + nums[1] _ nums[1] = 105
-(105) + nums[2] _ nums[2] = 114
+(100) + nums[0]_ nums[0] = 101
+(101) + nums[1] _nums[1] = 105
+(105) + nums[2]_ nums[2] = 114
 (114) + nums[3] \* nums[3] = 130
 The final answer is 130.
 Example 3:
