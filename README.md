@@ -1,3 +1,1 @@
-# free code camp
-
-Similar to leet code stuff
+# Mix of leetcode - hackerank - codewars - freecodecamp 
